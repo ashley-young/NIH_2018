@@ -193,7 +193,7 @@ def detect_objects(image_np_expanded):
 
 
 st_dir = os.path.join(PATH_TO_TEST_IMAGES_DIR, 'st')
-i = 0
+i = 1
 st = np.load(os.path.join(st_dir, '%02i.npy' % (i, )))
 st_objects = []
 
@@ -238,7 +238,7 @@ with detection_graph.as_default():
 
 # In[ ]:
 
-with open('st00_objects.pkl', 'wb') as f:
+with open('st01_objects.pkl', 'wb') as f:
      pickle.dump(st_objects, f)
 f.close()
 
