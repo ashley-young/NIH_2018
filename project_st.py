@@ -235,28 +235,26 @@ with detection_graph.as_default():
           plt.figure(figsize=IMAGE_SIZE)
           plt.imshow(image_np/255) #RBG
           st_objects.append(detect_objects(image_np_expanded))
-with open('sv00_objects.pkl', 'wb') as f:
-     pickle.dump(sv_objects, f)
-
 
 # In[ ]:
 
-
+with open('st00_objects.pkl', 'wb') as f:
+     pickle.dump(st_objects, f)
 f.close()
 
 
 # In[ ]:
 
 
-fileObject = open('sv_objects.pkl','rb')  
-b = pickle.load(fileObject) 
-print(f==b)
-print(np.array_equal(f,b))
-b
+#fileObject = open('sv_objects.pkl','rb')  
+#b = pickle.load(fileObject) 
+#print(f==b)
+#print(np.array_equal(f,b))
+#b
 
 
 # In[ ]:
 
 
-print(sv_objects==b)
+#print(sv_objects==b)
 
