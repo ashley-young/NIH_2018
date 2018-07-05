@@ -244,16 +244,14 @@ with detection_graph.as_default():
 # In[ ]:
 
 
-with open('st02_objects.pkl', 'wb') as f:
+with open('st%02i_objects.npy' % (i, ), 'wb') as f:
      pickle.dump(st_objects, f)
 f.close()
 
 
 # In[3]:
 
-
-import pickle
-fileObject = open('st02_objects.pkl','rb')  
+fileObject = open('st%02i_objects.npy' % (i, ),'rb')  
 b = pickle.load(fileObject) 
 b
 
