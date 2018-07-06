@@ -191,10 +191,10 @@ def detect_objects(image_np_expanded):
 
 
 st_dir = os.path.join(PATH_TO_TEST_IMAGES_DIR, 'st')
-i = 3
+# i = 3
 # If I call python st_project.py 1
 # sys.argv is 'st_project.py' 1
-# i = int(sys.argv[1])
+i = int(sys.argv[1])
 st = np.load(os.path.join(st_dir, '%02i.npy' % (i, )))
 st_objects = []
 
