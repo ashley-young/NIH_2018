@@ -244,7 +244,7 @@ with detection_graph.as_default():
 # In[ ]:
 
 
-with open('st%02i_objects.npy' % (i, ), 'wb') as f:
+with open('st%02i_objects.pkl' % (i, ), 'wb') as f:
      pickle.dump(st_objects, f)
 f.close()
 
