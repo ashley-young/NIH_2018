@@ -8,8 +8,8 @@
 
 # In[1]:
 
-
-get_ipython().run_line_magic('matplotlib', 'inline')
+#displays plots
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import numpy as np
 import os
 import six.moves.urllib as urllib
