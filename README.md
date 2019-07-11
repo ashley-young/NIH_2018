@@ -1,2 +1,3 @@
 # NIH
-assignments and projects done during NIH internship
+inferring visual experiences from fMRI data
+2018 nih internship
